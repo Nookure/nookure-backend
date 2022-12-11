@@ -6,7 +6,7 @@ plugins {
 
 group = "es.angelillo15"
 version = "1.0"
-val run = "es.angelillo15.Main"
+val run = "es.angelillo15.nookure.backend.Main"
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
@@ -16,7 +16,7 @@ application {
     mainClass.set(run)
 }
 
-project.setProperty("mainClassName", "es.angelillo15.Main")
+project.setProperty("mainClassName", "es.angelillo15.nookure.backend.Main")
 
 // set source and target compatibili
 
@@ -45,4 +45,10 @@ dependencies {
     implementation("com.mashape.unirest:unirest-java:1.4.9")
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("org.slf4j:slf4j-simple:2.0.3")
+    implementation("com.zaxxer:HikariCP:5.0.1")
+    implementation("ru.vyarus:yaml-config-updater:1.4.2")
+    annotationProcessor("org.projectlombok:lombok:1.18.20")
+    implementation("org.projectlombok:lombok:1.18.20")
+
+
 }
